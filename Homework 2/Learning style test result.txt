@@ -1,0 +1,5 @@
+Your Scores:
+
+    Auditory: 15%
+    Tactile: 40%
+    Visual: 45%
