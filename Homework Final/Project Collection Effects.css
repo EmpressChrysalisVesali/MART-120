@@ -1,0 +1,22 @@
+html{
+    background-color: rgb(189, 189, 189);
+    color:rgb(42, 234, 255);
+}
+
+body{
+    background-color: rgb(128, 128, 128);
+}
+
+a{
+    color: black;
+}
+
+p{
+    margin-left:25%;
+    margin-right:25%;
+}
+
+.centerText{
+    text-align:center;
+    margin:5%;
+}

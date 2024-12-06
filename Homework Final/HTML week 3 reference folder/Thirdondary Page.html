@@ -1,0 +1,96 @@
+<html>
+ <head>
+    <title>Le Third!</title>
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      h1, h4, form, body{
+         background-color:rgb(55, 55, 124);
+    color:whitesmoke;
+   }
+      a{
+         color:lightgray
+      }
+   </style>
+
+
+ </head>
+
+ <body>
+  <h1 style="text-decoration:underline">Initiate Dialogue Mitt Uns</h1>
+
+  <form action="Thirdondary Page.html" type="post">
+  First Name: <input type="text" id="foist"><br>
+  Last Name: <input type="text" id="loist"><br/>
+
+  Gib Thine Email: <input type="text" id="E"><br>
+
+
+
+  <h4 id="woodchippers">You will be granted 5000 woodchippers annually, in exchange for one (1) baboon. Is this acceptable?</h4>
+
+  <input type="radio" name="agree/disagree" id="yes" value="true">Agree<br>
+  <input type="radio" name="agree/disagree" id="no" value="false">Disagree<br><br>
+
+  <button id="Sumbit" type="button" class="btn btn-secondary" onclick="requirementChecker();">Submit</button>
+
+  </form>
+
+  <p id="firstNamePrint"></p>
+  <p id="lastNamePrint"></p>
+  <p id="emailPrint"></p>
+  <p id="Agreement"></p>
+
+  <script>
+   function requirementChecker(){
+      var firstName = document.getElementById("foist").value;
+      var lastName = document.getElementById("loist").value;
+      var Email = document.getElementById("E").value;
+      
+      if(Email == ""){
+      document.getElementById("E").style.backgroundColor = "purple";
+      document.getElementById("E").focus();
+      document.getElementById("emailPrint").innerHTML = "E-mail: Required";
+      }
+      else{
+         document.getElementById("E").style.backgroundColor = "white";
+         document.getElementById("emailPrint").innerHTML = "E-mail: " + Email;
+      }
+
+      if(lastName == ""){
+      document.getElementById("loist").style.backgroundColor = "purple";
+      document.getElementById("loist").focus();
+      document.getElementById("lastNamePrint").innerHTML = "Last Name: Required";
+      }
+      else{
+         document.getElementById("loist").style.backgroundColor = "white";
+         document.getElementById("lastNamePrint").innerHTML = "Last Name: " + lastName;
+      }
+
+      if(firstName == ""){
+      document.getElementById("foist").style.backgroundColor = "purple";
+      document.getElementById("foist").focus();
+      document.getElementById("firstNamePrint").innerHTML = "First Name: Required";
+      }
+      else{
+         document.getElementById("foist").style.backgroundColor = "white";
+         document.getElementById("firstNamePrint").innerHTML = "First Name: " + firstName;
+      }
+
+      if(document.getElementById("yes").checked){
+        document.getElementById("Agreement").innerHTML = "Thank you for your cooperation!";
+      }
+      else{
+        document.getElementById("Agreement").innerHTML = "You must agree to the terms.";
+      }
+     }
+  </script>
+
+  <br>Links:<br><br>
+   <a href="Secondary Page.html">Le Second!</a><br>
+   <a href="Initial Page.html">Le First!</a>
+   <br><br><br>
+
+ </body>
+
+<html/>

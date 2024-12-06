@@ -1,0 +1,39 @@
+html{
+    background-color:rgb(55, 55, 124);
+    color:whitesmoke;
+}
+
+a{
+    color:lightgray;
+}
+
+.storyFont{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.storyFont2{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.centerText{
+    text-align:center;
+    margin:5%;
+}
+
+#Sumbit{
+    font-family:cursive;
+    color:darkred;
+}
+
+#woodchippers{
+    font-size: 40px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#backgroundImage{
+    background-image:url(actia.png);
+}
+
+#bodyColor{
+    background-color: rgb(55, 55, 124
+    );
+}
